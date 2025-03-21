@@ -36,7 +36,7 @@ const Home = () => {
             animate={{x:0,opacity:1}}
             transition={{type:'spring', stiffness:300, duration:1.2,delay:0.4}}
           >
-            <span>SK</span>
+            <span className='sm:text-2xl'>SK</span>
           </motion.div>
           <motion.ul 
             className='flex gap-10 mr-20 sm:text-[1.5rem] max-sm:hidden'
@@ -51,14 +51,14 @@ const Home = () => {
           </motion.ul>
         </div>
         <motion.div 
-          className='absolute top-80 left-10 text-[2rem]'
+          className='absolute top-80 left-10 sm:text-[2rem]'
           initial={{y:100,opacity:0,scale:0}}
           animate={{y:0,opacity:1,scale:1}}
           transition={{type:'spring', stiffness:300, duration:1.2,delay:0.4}}
         >
-          <div className='flex flex-col gap-5'>
-            <h1 className='text-3xl'><span className='text-[5.2rem]'>Hello, I am</span> </h1>
-            <h1><span className='text-[2rem]'>Saravana</span> Junior WebDev</h1>
+          <div className='flex flex-col sm:gap-5 gap-3'>
+            <h1 className='sm:text-3xl'><span className='sm:text-[5.2rem]'>Hello, I am</span> </h1>
+            <h1><span className='sm:text-[2rem]'>Saravana</span> Junior WebDev</h1>
             <p>Interested in develop more websites!!</p>
           </div>
         </motion.div>
